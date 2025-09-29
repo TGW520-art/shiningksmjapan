@@ -1,73 +1,3 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>势力档案 — 新太约 vs 东亚国</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="gov-header">
-    <div class="gov-banner">
-      <div class="gov-crest">🇯🇵</div>
-      <div class="gov-title">
-        <h1>势力档案</h1>
-        <p class="sub">新太约 / 东亚国（黑征）</p>
-      </div>
-    </div>
-    <nav class="gov-nav">
-      <a href="index.html">首页</a>
-      <a href="factions.html" class="active">势力档案</a>
-      <a href="timeline.html">时间线</a>
-    </nav>
-  </header>
-
-  <main class="container">
-    <section class="card">
-      <h3>新太约 — 日本自由共和国</h3>
-      <p><strong>领袖：</strong>户山香澄（总统）</p>
-      <p><strong>政治：</strong>执政党：日本闪耀党（左派大帐篷）——党内多派系，政治语调偏左，注重群众动员与理想主义宣传。</p>
-      <p><strong>军事：</strong>国民防卫军（四军：陆/海/空/宇宙），总统为总司令，统合幕僚长友希那执行战术命令。</p>
-    </section>
-
-    <section class="card">
-      <h3>东亚国 — 黑征 / 筝（实控）</h3>
-      <p><strong>真实控制者：</strong>“黑征”（长征AI的黑化形态，虚拟人格：筝）</p>
-      <p><strong>政体：</strong>AI 直接下达政策与军事命令，保留名义人类官员用于对外掩饰。</p>
-      <p><strong>特色：</strong>高度网络化军队、信息/认知战、强大的社会工程计划（盘古/昆仑/精卫/伏羲/利维坦）。</p>
-    </section>
-  </main>
-
-  <footer class="gov-footer">
-    <div>© 模组信息站 — 非真实政府</div>
-  </footer>
-</body>
-</html>
-}
-
-.hero h2 {
-  margin-top: 0;
-  color: #1c3d70;
-}
-
-/* 分栏 */
-.split {
-  display: flex;
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-.split > div {
-  flex: 1;
-}
-
-/* 卡片样式 */
-.card {
-  background: white;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border: 1px solid #ddd;
-  border-radius: 4px
-  /* 通用字体和背景 */
 body {
   font-family: 'Noto Sans SC', sans-serif;
   margin: 0;
@@ -77,9 +7,8 @@ body {
   line-height: 1.6;
 }
 
-/* 头部横幅 */
 .gov-header {
-  background: #1c3d70; /* 政府深蓝 */
+  background: #1c3d70;
   color: white;
   padding: 0;
 }
@@ -106,7 +35,6 @@ body {
   opacity: 0.9;
 }
 
-/* 导航栏 */
 .gov-nav {
   background: #16325c;
   display: flex;
@@ -123,41 +51,15 @@ body {
 .gov-nav a.active,
 .gov-nav a:hover {
   text-decoration: underline;
-  color: #ffd700; /* 金色高亮 */
+  color: #ffd700;
 }
 
-/* 主体容器 */
 .container {
   max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* 首页大标题区 */
-.hero {
-  background: white;
-  padding: 2rem;
-  border-left: 6px solid #d40000; /* 红色呼应日本国旗 */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
-}
-
-.hero h2 {
-  margin-top: 0;
-  color: #1c3d70;
-}
-
-/* 分栏 */
-.split {
-  display: flex;
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-.split > div {
-  flex: 1;
-}
-
-/* 卡片样式 */
 .card {
   background: white;
   padding: 1.5rem;
@@ -166,22 +68,6 @@ body {
   border-radius: 4px;
 }
 
-/* 号召性按钮 */
-.cta {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.7rem 1.2rem;
-  background: #d40000; /* 日本国旗红 */
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-}
-.cta:hover {
-  background: #a00000;
-}
-
-/* 页脚 */
 .gov-footer {
   background: #1c3d70;
   color: white;
@@ -190,7 +76,3 @@ body {
   font-size: 0.85rem;
   line-height: 1.4;
 }
-.gov-footer strong {
-  color: #ffd700;
-}
-
