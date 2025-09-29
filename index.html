@@ -1,86 +1,51 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>日本自由共和国 — 官方门户</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="gov-header">
-    <div class="gov-banner">
-      <img src="assets/emblem.png" alt="日本自由共和国国徽" class="gov-crest" style="width:50px;height:50px;">
-      <div class="gov-title">
-        <h1>日本自由共和国</h1>
-        <p class="sub">政府门户网站 · 官方权威发布</p>
+<main class="container">
+  <section class="hero">
+    <h2>欢迎访问日本自由共和国政府门户</h2>
+    <p>本网站展示本共和国的组织架构、领导信息及对外政策概览，以官方公告风格呈现。</p>
+
+    <div class="split">
+      <div>
+        <h3>主要领导</h3>
+        <ul>
+          <li><strong>大統領</strong>：户山香澄</li>
+          <li><strong>内阁总理</strong>：市谷有咲</li>
+          <li><strong>统合幕僚长</strong>：湊友希那</li>
+        </ul>
+      </div>
+      <div>
+        <h3>国家概览</h3>
+        <p>日本自由共和国作为本地区政府机关，承担行政、立法和对外事务职能，并监督国防、公共安全和经济发展等关键领域。</p>
       </div>
     </div>
-    <nav class="gov-nav">
-      <a href="index.html" class="active">首页</a>
-      <a href="factions.html">关于我们</a>
-      <a href="timeline.html">历史与时间线</a>
-      <a href="government.html">政府名单</a>
-      <a href="policies.html">政策与方针</a>
-      <a href="#contact">联系</a>
-    </nav>
-  </header>
 
-  <main class="container">
-    <section class="hero">
-      <h2>欢迎访问日本自由共和国政府门户</h2>
-      <p>本网站展示本共和国的组织架构、领导信息及对外政策概览，以官方公告风格呈现。</p>
-
-      <div class="split">
-        <div>
-          <h3>主要领导</h3>
-          <ul>
-            <li><strong>大統領</strong>：户山香澄</li>
-            <li><strong>内阁总理</strong>：市谷有咲</li>
-            <li><strong>统合幕僚长</strong>：湊友希那</li>
-          </ul>
-        </div>
-        <div>
-          <h3>国家概览</h3>
-          <p>日本自由共和国作为本地区政府机关，承担行政、立法和对外事务职能，并监督国防、公共安全和经济发展等关键领域。</p>
-        </div>
-      </div>
-
-      <div style="margin-top:1rem;">
-        <a class="cta" href="factions.html">查看政府与势力档案 ↓</a>
-        <a class="cta" href="policies.html" style="margin-left:1rem;">查看政策与方针 ↓</a>
-      </div>
-    </section>
-
-    <section id="mod" class="mod-info card">
-      <h3>关于本项目</h3>
-      <p>本网站外观模仿真实政府门户，仅为 <strong>HoI4 模组《日本自由共和国 / 新太约 vs 东亚国》</strong> 的展示页面。</p>
-    </section>
-
-    <section class="card">
-      <h3>快速导航</h3>
-      <ul>
-        <li><a href="factions.html">政府与势力</a></li>
-        <li><a href="timeline.html">历史时间线</a></li>
-        <li><a href="government.html">政府名单</a></li>
-        <li><a href="policies.html">政策与方针</a></li>
-        <li><a href="#contact">联系与贡献</a></li>
-      </ul>
-    </section>
-
-    <section id="contact" class="card">
-      <h3>联系与贡献</h3>
-      <p>如需提供信息或贡献内容，请通过 GitHub 仓库提交 Issues 或 Pull Requests。</p>
-      <p><strong>目录建议：</strong>维护 <code>assets/</code>（素材）、<code>events/</code>（事件文本）、<code>docs/</code>（模组文档）文件夹。</p>
-    </section>
-  </main>
-
-  <footer class="gov-footer">
-    <div>© 2025 日本自由共和国 · 模组展示页面</div>
-    <div>部署：GitHub Pages · 模组团队维护</div>
-    <div style="margin-top:0.5rem;font-size:0.8rem;color:#ffd700;">
-      <strong>声明：</strong>本网站为《钢铁雄心IV》模组展示页面，非真实政府网站。
+    <div style="margin-top:1rem;">
+      <a class="cta" href="factions.html">查看政府与势力档案 ↓</a>
+      <a class="cta" href="policies.html" style="margin-left:1rem;">查看政策与方针 ↓</a>
     </div>
-  </footer>
-</body>
-</html>
+  </section>
+
+  <section class="card">
+    <h3>快速导航</h3>
+    <ul>
+      <li><a href="factions.html">政府与势力</a></li>
+      <li><a href="timeline.html">历史时间线</a></li>
+      <li><a href="government.html">政府名单</a></li>
+      <li><a href="policies.html">政策与方针</a></li>
+      <li><a href="#contact">联系与贡献</a></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="card">
+    <h3>联系与贡献</h3>
+    <p>如需提供信息或贡献内容，请通过 GitHub 仓库提交 Issues 或 Pull Requests。</p>
+    <p><strong>目录建议：</strong>维护 <code>assets/</code>（素材）、<code>events/</code>（事件文本）、<code>docs/</code>（模组文档）文件夹。</p>
+  </section>
+</main>
+
+<footer class="gov-footer">
+  <div>© 2025 日本自由共和国 · 模组展示页面</div>
+  <div>部署：GitHub Pages · 模组团队维护</div>
+  <div style="margin-top:0.5rem;font-size:0.8rem;color:#ffd700;">
+    <strong>声明：</strong>本网站为《钢铁雄心IV》模组展示页面，非真实政府网站。
+  </div>
+</footer>
