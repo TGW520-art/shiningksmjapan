@@ -67,4 +67,130 @@
   margin-bottom: 2rem;
   border: 1px solid #ddd;
   border-radius: 4px
-  
+  /* 通用字体和背景 */
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* 头部横幅 */
+.gov-header {
+  background: #1c3d70; /* 政府深蓝 */
+  color: white;
+  padding: 0;
+}
+
+.gov-banner {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.gov-crest {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.gov-title h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.gov-title .sub {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* 导航栏 */
+.gov-nav {
+  background: #16325c;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.gov-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gov-nav a.active,
+.gov-nav a:hover {
+  text-decoration: underline;
+  color: #ffd700; /* 金色高亮 */
+}
+
+/* 主体容器 */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* 首页大标题区 */
+.hero {
+  background: white;
+  padding: 2rem;
+  border-left: 6px solid #d40000; /* 红色呼应日本国旗 */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  margin-top: 0;
+  color: #1c3d70;
+}
+
+/* 分栏 */
+.split {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.split > div {
+  flex: 1;
+}
+
+/* 卡片样式 */
+.card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* 号召性按钮 */
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: #d40000; /* 日本国旗红 */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.cta:hover {
+  background: #a00000;
+}
+
+/* 页脚 */
+.gov-footer {
+  background: #1c3d70;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+.gov-footer strong {
+  color: #ffd700;
+}
+
