@@ -1,70 +1,203 @@
-/* 图片设置 */
-.gov-crest img {
-  width: 60px; /* 你可以根据需要调整图片的大小 */
-  height: auto;
-  display: block;
-  margin: 0 auto; /* 居中显示 */
-}
-
-/* 其他样式 */
+/* 通用设置 */
 body {
   font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 头部样式 */
 .gov-header {
   background-color: #1c3d70;
+  color: white;
+  padding: 15px 0;
+}
+
+.gov-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gov-crest {
+  display: inline-block;  /* 让图片和文字横向排列 */
+  vertical-align: middle;  /* 让图片垂直居中对齐 */
+  margin-right: 15px;  /* 图片和标题之间留一些空隙 */
+}
+
+.gov-crest img {
+  width: 40px;  /* 控制图片的宽度，适合放在标题左侧 */
+  height: auto;
+}
+
+.gov-title {
+  text-align: left;
+}
+
+.gov-title h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.gov-title .sub {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #ddd;
+}
+
+/* 导航样式 */
+.gov-nav {
+  display: flex;
+  justify-content: center;
+  background-color: #2d4f8c;
+  margin-top: 10px;
+}
+
+.gov-nav a {
+  padding: 14px 20px;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.gov-nav a:hover {
+  background-color: #1c3d70;
+}
+
+.gov-nav .active {
+  background-color: #f8c502;
+}
+
+/* 主要内容区域 */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.split div {
+  width: 48%;
+}
+
+.split h3 {
+  font-size: 1.5rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f8c502;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.cta:hover {
+  background-color: #e0b200;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 10px;
+}
+
+.card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.card table th,
+.card table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.card table th {
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+/* 页脚样式 */
+.gov-footer {
+  background-color: #2d4f8c;
   color: white;
   padding: 20px;
   text-align: center;
 }
 
-.gov-title h1 {
-  margin: 0;
-  font-size: 2.5em;
+.gov-footer div {
+  margin-bottom: 10px;
 }
 
-.gov-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  margin: 0 15px;
+.gov-footer strong {
+  color: #ffd700;
 }
 
-.gov-nav a.active {
-  font-weight: bold;
-}
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .gov-banner {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.container {
-  margin: 20px;
-}
+  .gov-crest {
+    margin-bottom: 10px;
+  }
 
-.hero {
-  text-align: center;
-  margin-bottom: 20px;
-}
+  .split {
+    flex-direction: column;
+  }
 
-.card {
-  background-color: #f4f4f4;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-}
-
-.gov-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-.cta {
-  text-decoration: none;
-  color: #fff;
-  background-color: #1c3d70;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-.cta:hover {
-  background-color: #555;
+  .split div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
