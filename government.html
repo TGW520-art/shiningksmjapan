@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* 局部表格样式（保留原有全局样式） */
     table { width:100%; border-collapse:collapse; margin-bottom:2rem; }
     th, td { border:1px solid #ddd; padding:0.5rem; text-align:left; vertical-align:top; word-break:break-word; }
     th { background:#1c3d70; color:#fff; }
@@ -14,17 +15,18 @@
     .gov-crest { font-size:2rem; margin-right:0.8rem; }
     .gov-title h1 { font-size:1.4rem; font-weight:bold; margin:0; letter-spacing:1px; }
     .gov-title p { margin:0; font-size:0.9rem; opacity:0.9; }
+    .card { background:#fff; padding:1rem; margin:1rem 0; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
   </style>
 </head>
 <body>
   <header class="gov-header">
     <div class="gov-banner">
       <div class="gov-crest">
-        <img src="unnamed.png" alt="日本自由共和国国徽" style="width:60px; height:auto;">
+        <img src="unnamed.png" alt="日本自由共和国国徽" style="width:80px; height:auto;">
       </div>
       <div class="gov-title">
         <h1>日本自由共和国</h1>
-        <p>政府门户网站 · 官方权威发布</p>
+        <p>政府门户网站 · 官方名单档案</p>
       </div>
     </div>
     <nav class="gov-nav">
@@ -37,8 +39,7 @@
   </header>
 
   <main class="container">
-
-    <!-- 国家领导 -->
+    <!-- 核心领导 -->
     <section class="card">
       <h2>日本自由共和国政府</h2>
       <table>
@@ -80,7 +81,7 @@
 
     <!-- 日本闪耀党 党干部 -->
     <section class="card">
-      <h2>日本闪耀党 党干部</h2>
+      <h2>日本闪耀党 · 党干部</h2>
       <table>
         <tbody>
           <tr><td>干事长</td><td>千早爱音</td></tr>
@@ -106,9 +107,9 @@
       </table>
     </section>
 
-    <!-- 日本自由共和国国民防卫军 高官 -->
+    <!-- 国民防卫军高官 -->
     <section class="card">
-      <h2>日本自由共和国国民防卫军 高官</h2>
+      <h2>日本自由共和国国民防卫军 · 高官</h2>
       <table>
         <tbody>
           <tr><td>司令官（总统兼任）</td><td>户山香澄（大元帅 统合将）</td></tr>
@@ -118,4 +119,36 @@
           <tr><td>陆军幕僚长</td><td>佐藤益木（大将）</td></tr>
           <tr><td>海军幕僚长</td><td>松原花音（大将）</td></tr>
           <tr><td>空军幕僚长</td><td>冰川纱夜（大将）</td></tr>
-          <tr><td>宇宙军幕僚长</td><td>丰川祥子（大将 宇宙航空研究开发机构理事长兼任）</td
+          <tr><td>宇宙军幕僚长</td><td>丰川祥子（大将、宇宙航空研究开发机构理事长兼任）</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 联邦海军维和司令部（混合） -->
+    <section class="card">
+      <h2>联邦海军维和司令部（Mixed / Hybrid）</h2>
+      <table>
+        <tbody>
+          <tr><td>联邦海军統合部长（Federation Secretary of the Navy & Chief of Naval Operations）</td><td>二叶筑紫</td></tr>
+          <tr><td>联邦海军作战部长（Chief of Naval Operations）</td><td>仓田真白</td></tr>
+          <tr><td>联邦海军部长（Federal Secretary of the Navy）</td><td>山姆·怀特</td></tr>
+          <tr><td>联邦海军参谋长（Chief of Staff of the Federal Navy）</td><td>库尔蒂斯·J·克鲁格</td></tr>
+          <tr><td>情报安全总监（Director of Intelligence & Counterintelligence）</td><td>广町七深（兼任情报调查相）</td></tr>
+          <tr><td>后勤与保障总监（Director of Logistics & Sustainment）</td><td>八潮瑠唯</td></tr>
+          <tr><td>人事与福利总监（Director of Human Resources & Administration Welfare）</td><td>桐谷透子</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.9rem;color:#666;">（以上为联邦海军维和司令部主要职务名单，部分职务为混合/联合作业指挥体系。）</p>
+    </section>
+
+  </main>
+
+  <footer class="gov-footer">
+    <div>© 2025 日本自由共和国 · 模组展示页面</div>
+    <div>部署：GitHub Pages · 模组团队维护</div>
+    <div style="margin-top:0.5rem;font-size:0.8rem;color:#ffd700;">
+      <strong>声明：</strong>本网站为《钢铁雄心IV》模组展示页面，非真实政府网站。
+    </div>
+  </footer>
+</body>
+</html>
