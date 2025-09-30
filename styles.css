@@ -22,7 +22,7 @@ a {
 .gov-banner {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* 左对齐国徽和标题 */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -35,8 +35,8 @@ a {
 }
 
 .gov-crest img {
-  width: 60px;  /* 根据需要调整大小 */
-  height: auto;
+  width: 100px;   /* 调大国徽宽度 */
+  height: auto;   /* 自动按比例缩放高度 */
 }
 
 .gov-title {
@@ -71,7 +71,7 @@ a {
 }
 
 .gov-nav a:hover {
-  background-color: #1a3d6c; /* 深蓝色 */
+  background-color: #1a3d6c;
 }
 
 .gov-nav .active {
@@ -187,6 +187,14 @@ a {
   .gov-banner {
     flex-direction: column;
     text-align: center;
+  }
+
+  .gov-crest {
+    margin-bottom: 10px;
+  }
+
+  .gov-crest img {
+    width: 60px; /* 手机屏幕上缩小国徽 */
   }
 
   .gov-title {
