@@ -2,7 +2,7 @@
 <html lang="zh-Hans">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>政府名单 — 日本自由共和国</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
@@ -10,7 +10,7 @@
     table { width:100%; border-collapse:collapse; margin-bottom:2rem; }
     th, td { border:1px solid #ddd; padding:0.5rem; text-align:left; vertical-align:top; word-break:break-word; }
     th { background:#1c3d70; color:#fff; }
-    .gov-banner { display:flex; align-items:center; background:#8b0000; color:#fff; padding:0.8rem 1.2rem; }
+    .gov-banner { display:flex; align-items:center; background:#1c3d70; color:#fff; padding:0.8rem 1.2rem; }
     .gov-crest { font-size:2rem; margin-right:0.8rem; }
     .gov-title h1 { font-size:1.4rem; font-weight:bold; margin:0; letter-spacing:1px; }
     .gov-title p { margin:0; font-size:0.9rem; opacity:0.9; }
@@ -19,7 +19,9 @@
 <body>
   <header class="gov-header">
     <div class="gov-banner">
-      <div class="gov-crest">🇯🇵</div>
+      <div class="gov-crest">
+        <img src="unnamed.png" alt="日本自由共和国国徽" style="width:60px; height:auto;">
+      </div>
       <div class="gov-title">
         <h1>日本自由共和国</h1>
         <p>政府门户网站 · 官方权威发布</p>
@@ -35,13 +37,23 @@
   </header>
 
   <main class="container">
-    <!-- 国家领导与内阁 -->
+
+    <!-- 国家领导 -->
     <section class="card">
-      <h2>国家领导与内阁主要阁僚</h2>
+      <h2>日本自由共和国政府</h2>
       <table>
         <tbody>
           <tr><td>大統領</td><td>户山香澄</td></tr>
           <tr><td>内阁总理</td><td>市谷有咲</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 内阁主要阁僚 -->
+    <section class="card">
+      <h2>内阁主要阁僚</h2>
+      <table>
+        <tbody>
           <tr><td>外务相</td><td>花园多惠</td></tr>
           <tr><td>总务相兼特命担当相（文化艺术振兴、世界博览会）</td><td>牛込里美</td></tr>
           <tr><td>财务相兼特命担当相（金融）</td><td>山吹沙绫</td></tr>
@@ -58,7 +70,7 @@
           <tr><td>复兴相兼特命担当相（地方振兴、战后复兴、全国经济区域统括、既有经济团体解体重组、公共事业重组）</td><td>丸山彩</td></tr>
           <tr><td>国家公安委员长兼特命担当相（防灾）</td><td>椎名立希</td></tr>
           <tr><td>特命担当相（男女共同参画社会基本法）</td><td>桐谷透子</td></tr>
-          <tr><td>特命担当相（对美事务）</td><td>二叶筑紫</td></tr>
+          <tr><td>特命担当相（对美事务）</td><td>二叶筑紫（现联邦海军統合部长 大将：Federation Secretary of the Navy & Chief of Naval Operations）</td></tr>
           <tr><td>特命担当相（经济安全保障、供应链强化）</td><td>奥泽美咲</td></tr>
           <tr><td>情报调查相</td><td>广町七深</td></tr>
           <tr><td>内阁法制局长</td><td>羽泽鶇</td></tr>
@@ -66,17 +78,44 @@
       </table>
     </section>
 
-    <!-- 党干部、其他职务、军方与联邦海军（此处省略，按需添加） -->
-    <!-- 你可以把之前完整名单的 section 复制到这里 -->
+    <!-- 日本闪耀党 党干部 -->
+    <section class="card">
+      <h2>日本闪耀党 党干部</h2>
+      <table>
+        <tbody>
+          <tr><td>干事长</td><td>千早爱音</td></tr>
+          <tr><td>政务调查会长</td><td>宇田川亚子</td></tr>
+          <tr><td>总务会长</td><td>白金磷子</td></tr>
+          <tr><td>选举对策委员会长</td><td>朝日六花</td></tr>
+          <tr><td>国会对策委员会长</td><td>濑田薰</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-  </main>
+    <!-- 其他重要职务 -->
+    <section class="card">
+      <h2>其他重要职务</h2>
+      <table>
+        <tbody>
+          <tr><td>东京都知事</td><td>冰川日菜</td></tr>
+          <tr><td>日本银行总裁</td><td>长崎爽世</td></tr>
+          <tr><td>宇宙航空研究开发机构理事长</td><td>丰川祥子</td></tr>
+          <tr><td>复合人类形态综合改造研究机构总监</td><td>珠手知由</td></tr>
+          <tr><td>特殊先进技术实证机构兼明坂试验场总监（统合幕僚长兼任）</td><td>湊友希那</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-  <footer class="gov-footer">
-    <div>© 2025 日本自由共和国 · 模组展示页面</div>
-    <div>部署：GitHub Pages · 模组团队维护</div>
-    <div style="margin-top:0.5rem;font-size:0.8rem;color:#ffd700;">
-      <strong>声明：</strong>本网站为《钢铁雄心IV》模组展示页面，非真实政府网站。
-    </div>
-  </footer>
-</body>
-</html>
+    <!-- 日本自由共和国国民防卫军 高官 -->
+    <section class="card">
+      <h2>日本自由共和国国民防卫军 高官</h2>
+      <table>
+        <tbody>
+          <tr><td>司令官（总统兼任）</td><td>户山香澄（大元帅 统合将）</td></tr>
+          <tr><td>防卫相</td><td>今井丽莎</td></tr>
+          <tr><td>统合幕僚长</td><td>湊友希那（大将长 统合将）</td></tr>
+          <tr><td>统合幕僚副长兼后方总长</td><td>鳰原令王那（大将 统合将）</td></tr>
+          <tr><td>陆军幕僚长</td><td>佐藤益木（大将）</td></tr>
+          <tr><td>海军幕僚长</td><td>松原花音（大将）</td></tr>
+          <tr><td>空军幕僚长</td><td>冰川纱夜（大将）</td></tr>
+          <tr><td>宇宙军幕僚长</td><td>丰川祥子（大将 宇宙航空研究开发机构理事长兼任）</td
