@@ -5,6 +5,238 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>首页 — 日本自由共和国</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* 顶部横幅 */
+    .gov-header {
+      background-color: #1c3d70;
+      color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .gov-banner {
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 20px;
+    }
+
+    .gov-crest img {
+      width: 100px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid rgba(255,255,255,0.5);
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .gov-title {
+      text-align: left;
+    }
+
+    .gov-title h1 {
+      font-size: 2rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .gov-title .sub {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #ddd;
+    }
+
+    /* 搜索框 */
+    .header-search {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+
+    .header-search input {
+      padding: 6px 10px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .header-search button {
+      padding: 6px 10px;
+      background-color: #f8c502;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .header-search button:hover {
+      background-color: #e0b200;
+    }
+
+    /* 导航栏 */
+    .gov-nav {
+      display: flex;
+      justify-content: center;
+      background-color: #2d4f8c;
+      margin-top: 5px;
+      border-bottom: 2px solid #1a3d6c;
+    }
+
+    .gov-nav a {
+      padding: 14px 20px;
+      color: white;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-radius: 4px 4px 0 0;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .gov-nav a:hover {
+      background-color: #1a3d6c;
+    }
+
+    .gov-nav .active {
+      background-color: #f8c502;
+      color: #1c3d70;
+    }
+
+    /* 主要内容 */
+    .container {
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: #1c3d70;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .split {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .split div {
+      width: 48%;
+    }
+
+    .split h3 {
+      font-size: 1.5rem;
+      color: #1c3d70;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f8c502;
+      color: #1c3d70;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 20px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+      background-color: #e0b200;
+      transform: translateY(-2px);
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 25px;
+      margin-top: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    /* 页脚 */
+    .gov-footer {
+      background-color: #2d4f8c;
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: inset 0 1px 5px rgba(0,0,0,0.15);
+    }
+
+    .gov-footer div {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .gov-footer strong {
+      color: #ffd700;
+    }
+
+    /* 响应式 */
+    @media screen and (max-width: 768px) {
+      .gov-banner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .gov-crest img {
+        width: 70px;
+        margin-bottom: 10px;
+      }
+
+      .gov-title {
+        text-align: center;
+      }
+
+      .header-search {
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .header-search input {
+        width: 70%;
+        max-width: 250px;
+      }
+
+      .split {
+        flex-direction: column;
+      }
+
+      .split div {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .container {
+        padding: 20px 10px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="gov-header">
@@ -16,7 +248,14 @@
         <h1>日本自由共和国</h1>
         <p class="sub">政府门户网站 · 官方权威发布</p>
       </div>
+
+      <!-- 搜索框 -->
+      <form action="res.html" method="get" class="header-search">
+        <input type="text" name="q" placeholder="搜索...">
+        <button type="submit">搜索</button>
+      </form>
     </div>
+
     <nav class="gov-nav">
       <a href="index.html" class="active">首页</a>
       <a href="factions.html">关于我们</a>
@@ -60,23 +299,11 @@
         <li><a href="government.html">政府名单</a></li>
         <li><a href="policies.html">政策与方针</a></li>
         <li><a href="#contact">联系与贡献</a></li>
-        <li><a href="#joinus.html">加入我们</a></li>
+        <li><a href="joinus.html">加入我们</a></li>
       </ul>
     </section>
 
     <section id="contact" class="card">
       <h3>联系与贡献</h3>
       <p>如需提供信息或贡献内容，邮联1732177940@qq.com。</p>
-      <p><strong>目录建议：</strong>维护 <code>assets/</code>（素材）、<code>events/</code>（事件文本）、<code>docs/</code>（模组文档）文件夹。</p>
-    </section>
-  </main>
-
-  <footer class="gov-footer">
-    <div>© 2025 日本自由共和国 · 模组展示页面</div>
-    <div>部署：GitHub Pages · 模组团队维护</div>
-    <div style="margin-top:0.5rem;font-size:0.8rem;color:#ffd700;">
-      <strong>声明：</strong>本网站为《钢铁雄心IV》模组展示页面，非真实政府网站。
-    </div>
-  </footer>
-</body>
-</html>
+      <p><strong>目录建议：</strong>维护 <code>assets/</code>（素材）、<code>events/</code>（事件文本）、<code>docs/</code>
