@@ -1,84 +1,70 @@
+/* 图片设置 */
+.gov-crest img {
+  width: 60px; /* 你可以根据需要调整图片的大小 */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* 居中显示 */
+}
+
+/* 其他样式 */
 body {
-  font-family: 'Noto Sans SC', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #222;
-  line-height: 1.6;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .gov-header {
-  background: #1c3d70;
+  background-color: #1c3d70;
   color: white;
-  padding: 0;
-}
-
-.gov-banner {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-}
-
-.gov-crest {
-  font-size: 2rem;
-  margin-right: 1rem;
+  padding: 20px;
+  text-align: center;
 }
 
 .gov-title h1 {
   margin: 0;
-  font-size: 1.8rem;
-}
-
-.gov-title .sub {
-  margin: 0;
-  font-size: 0.9rem;
-  opacity: 0.9;
-}
-
-.gov-nav {
-  background: #16325c;
-  display: flex;
-  gap: 1rem;
-  padding: 0.5rem 1rem;
+  font-size: 2.5em;
 }
 
 .gov-nav a {
   color: white;
   text-decoration: none;
+  padding: 10px;
+  margin: 0 15px;
+}
+
+.gov-nav a.active {
   font-weight: bold;
 }
 
-.gov-nav a.active,
-.gov-nav a:hover {
-  text-decoration: underline;
-  color: #ffd700;
+.container {
+  margin: 20px;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+.hero {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .card {
-  background: white;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
 }
 
 .gov-footer {
-  background: #1c3d70;
+  background-color: #333;
   color: white;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.85rem;
-  line-height: 1.4;
+  padding: 10px;
 }
-.gov-crest img {
-  width: 60px;      /* 60px */
-  height: auto;
-  display: block;
-  margin: 0 auto;   /* 居中显示 */
+
+.cta {
+  text-decoration: none;
+  color: #fff;
+  background-color: #1c3d70;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.cta:hover {
+  background-color: #555;
 }
