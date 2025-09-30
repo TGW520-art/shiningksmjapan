@@ -5,11 +5,13 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
+  line-height: 1.6;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.3s ease;
 }
 
 /* 头部样式 */
@@ -17,12 +19,13 @@ a {
   background-color: #1c3d70;
   color: white;
   padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 .gov-banner {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* 左对齐国徽和标题 */
+  justify-content: flex-start;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -31,12 +34,15 @@ a {
 .gov-crest {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 15px;
+  margin-right: 20px;
+  flex-shrink: 0;
 }
 
 .gov-crest img {
-  width: 100px;   /* 调大国徽宽度 */
-  height: auto;   /* 自动按比例缩放高度 */
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid rgba(255,255,255,0.5);
 }
 
 .gov-title {
@@ -46,11 +52,12 @@ a {
 .gov-title h1 {
   font-size: 2rem;
   margin: 0;
+  letter-spacing: 1px;
 }
 
 .gov-title .sub {
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 400;
   color: #ddd;
 }
 
@@ -60,6 +67,7 @@ a {
   justify-content: center;
   background-color: #2d4f8c;
   margin-top: 10px;
+  border-bottom: 2px solid #1a3d6c;
 }
 
 .gov-nav a {
@@ -68,6 +76,8 @@ a {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px 4px 0 0;
 }
 
 .gov-nav a:hover {
@@ -76,106 +86,89 @@ a {
 
 .gov-nav .active {
   background-color: #f8c502;
+  color: #1c3d70;
 }
 
 /* 主要内容区域 */
 .container {
-  padding: 20px;
+  padding: 30px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.hero {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.hero h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.split {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.split div {
-  width: 48%;
-}
-
-.split h3 {
-  font-size: 1.5rem;
-}
-
-.cta {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #f8c502;
-  color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 20px;
-  border-radius: 5px;
-}
-
-.cta:hover {
-  background-color: #e0b200;
-}
-
 .card {
   background-color: #fff;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card ul {
-  list-style-type: none;
-  padding: 0;
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-.card li {
-  margin-bottom: 10px;
+.card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #1c3d70;
 }
 
 .card table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .card table th,
 .card table td {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ddd;
   word-wrap: break-word;
 }
 
 .card table th {
-  background-color: #f0f0f0;
-  text-align: left;
+  background-color: #1c3d70;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.card table tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+/* CTA 按钮 */
+.cta {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f8c502;
+  color: #1c3d70;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #e0b200;
+  transform: translateY(-2px);
 }
 
 /* 页脚样式 */
 .gov-footer {
   background-color: #2d4f8c;
   color: white;
-  padding: 20px;
+  padding: 25px 20px;
   text-align: center;
+  box-shadow: inset 0 1px 5px rgba(0,0,0,0.15);
 }
 
 .gov-footer div {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
 }
 
 .gov-footer strong {
@@ -194,19 +187,14 @@ a {
   }
 
   .gov-crest img {
-    width: 60px; /* 手机屏幕上缩小国徽 */
+    width: 70px;
   }
 
   .gov-title {
     text-align: center;
   }
 
-  .split {
-    flex-direction: column;
-  }
-
-  .split div {
-    width: 100%;
-    margin-bottom: 20px;
+  .card {
+    padding: 20px;
   }
 }
