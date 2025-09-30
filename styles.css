@@ -76,3 +76,9 @@ body {
   font-size: 0.85rem;
   line-height: 1.4;
 }
+.gov-crest img {
+  width: 60px;      /* 60px */
+  height: auto;
+  display: block;
+  margin: 0 auto;   /* 居中显示 */
+}
